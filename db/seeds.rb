@@ -22,7 +22,7 @@ end
   Advertisement.create!(
     title: RandomData.random_sentence,
     body: RandomData.random_paragraph,
-    price: RandomData.random_word
+    price: 9999
   )
 end
 
