@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :posts
+  resources :topics do
+    resources :posts, expect: [:index]
+  end
   
   get 'about' => 'welcome#about'
 
