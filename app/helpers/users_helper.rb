@@ -1,11 +1,9 @@
 module UsersHelper
   def any_posts_yet?
-    if @user.posts.count > 0
-    end
+    @user.posts.count > 0
   end
   
   def any_comments_yet?
-    if @user.comments.count > 0
-    end
+    @user.comments.count > 0
   end
 end
